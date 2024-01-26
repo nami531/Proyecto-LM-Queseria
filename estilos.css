@@ -106,10 +106,27 @@ footer.index{
 }
 
 /* Hasta aquí el css de la página de index */
-h1.qs{
-    font-variant: normal;
+a.restantes{
+    text-decoration: none;
+    background-color: lightgray;
+    color: white;
+    flex:space-between;
+    padding: 1% 5%;
+    font-weight: bold;
 }
+
+nav.menu{
+    background-color: lightgray;
+    display: flex;
+    flex-direction: row;  
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 1%;
+    border-bottom: 1px solid;
+}
+
 .nuestra_historia{
+    margin-top: -1.5%;
     background-color: black;
 }
 
