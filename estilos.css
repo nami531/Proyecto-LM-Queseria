@@ -130,13 +130,12 @@ nav.menu{
     background-color: black;
 }
 
-#nuestra_historia{
+h1.qs{
     font-family: 'Bebas Neue', sans-serif;
     font-size: 190%;
     letter-spacing:0.1rem;
     width: 5%;
     padding: 3% 3% 0 3%;
-    margin-bottom: -8%;
     color:white;
 }
 
@@ -147,14 +146,38 @@ nav.menu{
     justify-items: center;
     align-items: center;
     margin-top: minmax(-1.5%,2%);
+    margin-bottom: -1.8%;
 }
 
 #superqueso{
     width: 70%;
     
 }
-.texto{
+.texto, dd, dt{
     padding-left: 6%;
     color: white
 }
+
+.ne{
+    background-image: url(./Multimedia/gente.jpg);
+    background-repeat: no-repeat;
+    margin-top: 0%;
+    background-size: 120% auto;
+    background-position: center;
+}
+
+.lista{
+    padding-bottom:1%;
+}
+
+dt{
+    text-shadow:2px 2px 5px black;
+    font-weight: bold;
+}
+
+dt::before{
+    content:"🍴";
+    margin-right:8px;
+}
+
 
