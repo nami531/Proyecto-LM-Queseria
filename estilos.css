@@ -154,7 +154,7 @@ h1.qs{
     
 }
 .texto, dd, dt{
-    padding-left: 6%;
+    padding-left: 3%;
     color: white
 }
 
@@ -179,5 +179,12 @@ dt::before{
     content:"🍴";
     margin-right:8px;
 }
+
+.nm{
+    background-color: black;
+    color:white;
+    padding: 1%;
+}
+
 
 
