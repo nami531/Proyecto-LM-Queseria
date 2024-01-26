@@ -6,36 +6,37 @@
         <meta name="author" content="Nadia Márquez Iglesias">
         <title>Página de inicio</title>
         <link rel = "icon" href="Multimedia/bolas-de-queso.png">
-        <link rel="stylessheet" href="./estilos.css">
+        <link rel="stylesheet" href="./estilos.css">
     </head>
 
     <body>
         <header>
-            <nav align="center">              
-                <a href="quienes_somos.html" target = "_blank">Quiénes somos</a> 
+            <nav >              
+                <a class="menu" href="quienes_somos.html" target = "_blank">Quiénes somos</a> 
                 &nbsp;
-                <a href="menu.html" target = "_blank">Menú</a>
+                <a  class="menu" href="menu.html" target = "_blank">Menú</a>
                 &nbsp;
-                <a href="galeria.html" target = "_blank">Galería</a>
+                <a  class="menu" href="galeria.html" target = "_blank">Galería</a>
                 &nbsp;
-                <a href="reservas.html" target = "_blank">Reservas</a>
+                <a  class="menu" href="reservas.html" target = "_blank">Reservas</a>
                 &nbsp;
-                <a href="contacto.html" target = "_blank">Contacto</a>
+                <a  class="menu" href="contacto.html" target = "_blank">Contacto</a>
                 &nbsp;
-                <a href="testimonios.html" target = "_blank">Testimonios</a>                
+                <a class="menu"  href="testimonios.html" target = "_blank">Testimonios</a>                
             </nav>
 
-    
-            <h1 align="center">&nbsp; QUESERÍA YO SIN TI &nbsp; <image src = "Multimedia/queso.png" height = "50" align= "center"></image></h1>
-            
-            <p align="center"><em>Qué sería uno mismo sin el queso</em></p>
-            <h4 align="center">¡Bienvenido a nuestra página web!</h4>
+            <div align="center" class="titulo">
+                <h1>&nbsp; QUESERÍA YO SIN TI &nbsp; <image src = "Multimedia/queso.png" height = "50" align= "center"></image></h1>
+                
+                <p ><em>Qué sería uno mismo sin el queso</em></p>
+                <h4 >¡Bienvenido a nuestra página web!</h4>
+            </div>
         </header>
              
         
         <main>
-            <section align="center">
-                <video controls autoplay preload="auto" width="1280" height="720" poster="Multimedia/postervideo.png">
+            <section >
+                <video id="videoFondo" controls autoplay preload="auto" loop poster="Multimedia/postervideo.png">
                     <source src="Multimedia/videoindex.avi" type="video/avi"/>
                     <source src="Multimedia/videoindex.mp4" type="video/mp4"/>
                     <p>Tu navegador no soporta el formato de vídeo.
@@ -45,8 +46,8 @@
 
             </section>
         </main>
-        <footer>
-            <p align="center">
+        <footer align="center">
+            <p >
                 Teléfono de contacto: <strong>+34 698 34 38 44</strong> <!-- Teléfono inventado-->
                 &emsp; Instagram: <a href="enlacepagina">@queseríayosinti</a>
                 &emsp; Facebook : <a href="enlacepagina">@queseríayosinti</a>

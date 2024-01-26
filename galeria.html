@@ -5,7 +5,7 @@
         <meta name="author" content="Nadia Márquez Iglesias">
         <meta name="keywords" content="quesos, fotos de quesos, jamón, jamon, quesería yo sin ti">
         <link rel = "icon" href="Multimedia/bolas-de-queso.png">
-        <link rel="stylessheet" href="./estilos.css">
+        <link rel="stylesheet" href="./estilos.css">
         <script> 
             let currentIndex = 0; 
             const totalImages = 9;
@@ -57,7 +57,7 @@
     
     <body>
         <header>
-            <nav align="center"> 
+            <nav class="menu"> 
                 <a href="index.html" target = "_blank">Inicio</a> 
                 &nbsp;                
                 <a href="quienes_somos.html" target = "_blank">Quiénes somos</a> 
@@ -75,13 +75,13 @@
 
         <main>
             <section>
-                <article align="center">
+                <article >
                     <button onclick="AnteriorImg(); anteriorTexto()">Anterior</button>
                     <button onclick="SiguienteImg(); siguienteTexto()">Siguiente</button>
                 </article>
                 <br>
                 
-                <article id="carousel" align="center">
+                <article id="carousel" >
                     <a href="Multimedia/cocinas 2.jpg" target="_self">
                         <img src="Multimedia/cocinas 2.jpg"  height="500" width="750"/>
                     </a>
@@ -119,13 +119,13 @@
                     </a>
                     <br>           
                 </article>
-                <article id="platos" align="center">
+                <article id="platos" >
                     <h1 id="TextoPlato">Tabla Hulk</h1>
                 </article>
             </section>
             <br>
         </main> 
-        <footer align="center">
+        <footer >
             <p>
                 Teléfono de contacto: <strong>+34 698 34 38 44</strong> <!-- Teléfono inventado-->
                 &emsp; Instagram: <a href="enlacepagina">@queseríayosinti</a>
