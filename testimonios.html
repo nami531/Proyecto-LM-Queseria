@@ -1,0 +1,82 @@
+<!DOCTYPE html> 
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="author" content="Nadia Márquez Iglesias">
+        <meta name="keywords" content="queso, comentarios, testimonios, respuestas">
+        <link rel = "icon" href="Multimedia/bolas-de-queso.png">
+        <link rel="stylessheet" href="./estilos.css">
+        <script> 
+        function addComment() {
+            var nombre = document.getElementById("nombre").value;
+            var texto_del_comentario = document.getElementById("comentario").value;
+        
+            var comment = document.createElement("article");
+            comment.className = "comentario";
+            comment.innerHTML = "<strong>@" + nombre + ":</strong> " + texto_del_comentario + "<br> <br>";
+
+            
+            document.getElementById("contenedor").appendChild(comment);       
+           
+            }
+        </script>
+        <title>Testimonios</title>
+    </head>
+    
+
+
+    <body>
+        <header>
+            <nav align="center">     
+                <a href="index.html" target = "_blank">Inicio</a> 
+                &nbsp;            
+                <a href="quienes_somos.html" target = "_blank">Quiénes somos</a> 
+                &nbsp;
+                <a href="menu.html" target = "_blank">Menú</a>
+                &nbsp;
+                <a href="galeria.html" target = "_blank">Galería</a>
+                &nbsp;
+                <a href="reservas.html" target = "_blank">Reservas</a>
+                &nbsp;
+                <a href="contacto.html" target = "_blank">Contacto</a>   
+            </nav>
+        </header>
+        <main>
+            <section id="contenedor">
+                <article name="Juan"><p><strong>@Juan: </strong>Templo para los amantes del queso, es una delicia entrar en esta tienda. Además de unos estupendos quesos, colocados divinamente, disponen de buen vino y algún que otro producto gourmet. Os aconsejaran según vuestros gustos, y es que el personal es muy amable. Me encanta coger una caja y rellenarla de porciones variadas. Además se organizan catas y eventos en su salón trasero. Un paraíso!!</p></article>
+                
+                <article name="Maria"></p><strong>@María: </strong>Amplia selección de quesos con una gran calidad y una excelente RCP.  Gran profesionalidad y un trato muy amable. Catas muy interesantes. Totalmente recomendable</p></article>
+
+                <article name="Manolo"><p><strong>@Manolo: </strong>Todo tipo de quesos artesanos y una atención especializada, explicándote los orígenes de cada uno y asesorándote con paciencia infinita.las cajas para regalar son un éxito garantizado.</p></article>
+
+                <article name="respuestaManolo"><p><em>En respuesta a <strong>@Manolo</strong>:</em> Muchas gracias Manol por apreciar nuestro esfuerzo, esperamos volver a verte</p></article>
+
+                <article name="Marisol"><p><strong>@Marisol: </strong>Amabilidad-profesionalidad-calidad eso es lo que te vas a encontrar, si eres un amante de los quesos este es tu sitio.</p></article>
+
+                <article name="Diana"><p><strong>@Diana: </strong>La reseña correspondiente a la quesería sería de 5 estrellas, tienen unos productos espectaculares y siempre incorporan novedades. Un auténtico lujo para los que somos amantes del queso. Sin embargo, la atención que hemos recibido las dos últimas veces ha sido pésima. Nos atendió una chica joven, con un trato desagradable y maleducado. Una pena.</p></article>
+
+                <article name="respuestaDiana"><p><em>En respuesta a <strong>@Diana</strong> :</em>Lo sentimos mucho Diana, te esperamos con los brazos abiertos para la próxima vez.</p></article>
+                
+            </section><br><br>
+
+            <section>
+                <form id="formulario" method="post" action="archivo.php">
+                    <label for="nombre">Nombre:*</label>
+                    <input type="text" id="nombre"  maxlength="15"><br><br>
+                    
+                    <label for="comentario">Comentario:</label><br>
+                    <textarea id="comentario" cols="28" rows="4" required></textarea><br>
+                    
+                    <button type="button" onclick="addComment()">Agregar Comentario</button>
+                </form>
+            </section>
+        </main>
+        <footer align="center">
+            <p>
+                Teléfono de contacto: <strong>+34 698 34 38 44</strong> <!-- Teléfono inventado-->
+                &emsp; Instagram: <a href="enlacepagina">@queseríayosinti</a>
+                &emsp; Facebook : <a href="enlacepagina">@queseríayosinti</a>
+            </p> 
+        </footer>
+    </body>
+</html>
