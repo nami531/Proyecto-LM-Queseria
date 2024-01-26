@@ -7,9 +7,12 @@
         <title>Página de inicio</title>
         <link rel = "icon" href="Multimedia/bolas-de-queso.png">
         <link rel="stylesheet" href="./estilos.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
     </head>
 
-    <body>
+    <body class="index">
         <header>
             <nav >              
                 <a class="menu" href="quienes_somos.html" target = "_blank">Quiénes somos</a> 
@@ -26,10 +29,10 @@
             </nav>
 
             <div align="center" class="titulo">
-                <h1>&nbsp; QUESERÍA YO SIN TI &nbsp; <image src = "Multimedia/queso.png" height = "50" align= "center"></image></h1>
+                <h1>&nbsp; QUESERÍA YO SIN TI &nbsp; <image id="logo" src = "Multimedia/queso.png" height = "50" align= "center"></image></h1>
                 
-                <p ><em>Qué sería uno mismo sin el queso</em></p>
-                <h4 >¡Bienvenido a nuestra página web!</h4>
+                <p id="eslogan"><em>Qué sería uno mismo sin el queso</em></p>
+                <h4 id="bienvenido">¡Bienvenido a nuestra página web!</h4>
             </div>
         </header>
              
@@ -49,8 +52,8 @@
         <footer align="center">
             <p >
                 Teléfono de contacto: <strong>+34 698 34 38 44</strong> <!-- Teléfono inventado-->
-                &emsp; Instagram: <a href="enlacepagina">@queseríayosinti</a>
-                &emsp; Facebook : <a href="enlacepagina">@queseríayosinti</a>
+                &emsp; Instagram: <a class="rs" href="enlacepagina">@queseríayosinti</a>
+                &emsp; Facebook : <a class="rs" href="enlacepagina">@queseríayosinti</a>
             </p> 
         </footer>
     </body>
