@@ -227,7 +227,7 @@ li{
     background-color: black;
 }
 
-button{
+button.galeria{
     border: none;
     height: auto;
     background-color: transparent;
@@ -237,4 +237,17 @@ button{
 button:hover{
     background-color: rgba(0, 0, 0, 0.5);
     box-shadow: 0 3px 5px 2px;
+}
+/* Hasta aquí la galería */
+
+input[type=text], textarea, label{
+    border-radius: 0px;
+    color:white;
+    background-color: black;
+}
+
+#formulario_coment{
+    background-color: black;
+    box-shadow: 3px 3px 3px 3px blue ;
+    padding: 2%;
 }
