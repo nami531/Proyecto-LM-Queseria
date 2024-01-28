@@ -123,6 +123,7 @@ nav.menu{
     justify-content: center;
     padding-bottom: 1%;
     border-bottom: 1px solid;
+    flex-wrap: wrap;
 }
 
 .nuestra_historia{
@@ -186,5 +187,32 @@ dt::before{
     padding: 1%;
 }
 
+ul{
+    display:grid;
+    grid-template-columns:repeat(3, 3fr);
+    column-gap: 3%;
+    grid-template-rows: repeat(2,auto);
+    row-gap: 3%;
+    list-style-type: none;
+}
 
+li{
+    border:dashed;
+    display: flex;
+    flex-direction: column;
+}
+
+footer{
+    padding: 2%;
+    background-color: gray;
+    color :white;
+    margin-top:10% ;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+a.footer{
+    color:white;
+    text-decoration: none;
+}
 
