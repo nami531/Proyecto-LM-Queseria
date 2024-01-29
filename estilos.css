@@ -8,10 +8,15 @@ footer{
     padding: 2%;
     background-color: gray;
     color :white;
-    margin-top:10% ;
+    /* margin-top:10% ; */
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: center;
+    justify-items: center;
+}
+span.footer{
+    flex:space-between;
 }
 
 a.footer{
@@ -121,6 +126,9 @@ footer.index{
 }
 
 /* Hasta aquí el css de la página de index */
+body.qs{
+    background-color: rgb(29, 29, 29);
+}
 a.restantes{
     text-decoration: none;
     background-color: gray;
@@ -202,6 +210,14 @@ dt::before{
     padding: 1%;
 }
 
+.ns{
+    background-image: url(./Multimedia/murofondo.jpeg);
+    margin-bottom: 0;
+    background-size: 1500px;
+}
+#nuestros_valores{
+    color:black
+}
 ul{
     display:grid;
     grid-template-columns:repeat(3, 3fr);
@@ -209,29 +225,46 @@ ul{
     grid-template-rows: repeat(2,auto);
     row-gap: 3%;
     list-style-type: none;
+    padding: 3%;
 }
 
 li{
     border:dashed;
     display: flex;
     flex-direction: column;
+    padding: 2%;
+    background-color: white;
 }
 
 /* Hasta aquí el quienes somos */
 
 
-.galeria{
+/* .galeria{
     display: flex;
     align-items: stretch;
     padding: 0.5%;
     background-color: black;
-}
+    justify-items: center;
+} */
+
 
 button.galeria{
     border: none;
     height: auto;
     background-color: transparent;
-    color: white;
+    color: black;
+}
+
+#siguiente{
+    position:absolute;
+    right: 15%;
+    top:37%;
+}
+
+#anterior{
+    position:absolute;
+    left: 15%;
+    top:37%;
 }
 
 button:hover{
