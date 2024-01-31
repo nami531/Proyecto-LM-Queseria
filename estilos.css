@@ -333,6 +333,7 @@ fieldset{
     background-color: white;
     border: none;
     border-bottom: 3px solid black;
+    color:black;
 }
 
 .email-tlf{
@@ -436,7 +437,7 @@ fieldset{
     background-color:#88d7f2;
 }
 
-#titulo_alergias{
+#alergias_titulo{
     align-self: center;
     justify-self: center;
     color:#e2f4fc;
