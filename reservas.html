@@ -7,6 +7,9 @@
         <link rel = "icon" href="Multimedia/bolas-de-queso.png">
         <title>Reservas</title>
         <link rel="stylesheet" href="./estilos.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Marhey:wght@300&display=swap" rel="stylesheet"
     </head>
     
     <body id="reservas">
@@ -75,16 +78,16 @@
                         
                         <div class="cajas_pref">
                             <div id="mesa" class="box">
-                                <label for="lugar" id="titulo_box">Mesa:</label>
+                                <label for="lugar" class="titulo_reservas" id="titulo_box">Mesa:</label>
                                 <div class="textbox"><input class="reserv" id="lugar" name="Terraza" type="radio" value="Terraza">Terraza</div>
                                 <div class="textbox"><input class="reserv" id="lugar" name="Terraza" type="radio" value="Fuera">Fuera</div>
                             </div>
                         
                         
                             <div class="box" id="alergias">
-                                <label for="alergias">Alergias alimentarias:</label>                         
+                                <label for="alergias" class="titulo_reservas">Alergias alimentarias:</label>                         
                                 <div class="caja">
-                                    <select class="option" multiple size="3">
+                                    <select class="option">
                                         <option value="0">Selecciona una opción</option>
                                         <option value="Gluten">Gluten</option>
                                         <option value="Huevo">Huevo</option>
@@ -95,7 +98,7 @@
                     
                             <div id="pref_box" class="box">
                                 
-                                <label for="preferencias">Preferencias alimentarias: </label> 
+                                <label for="preferencias" class="titulo_reservas" id="pref_al">Preferencias alimentarias: </label> 
                         
                                 
                                 <div class="textbox" id="vegano"><input class="reserv" id="preferencias" type="checkbox" value="Vegano">Alguno de los comensales es vegano</div>

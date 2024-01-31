@@ -371,6 +371,11 @@ fieldset{
     align-content: center; */
 }
 
+.titulo_reservas{
+    font-size: 30px;
+    font-family: 'Marhey', sans-serif;
+}
+
 #enviar{
     background-color: black;
     color:white;
@@ -381,11 +386,13 @@ fieldset{
     margin-right: 20%;
 }
 
+
 .cajas_pref{
-    margin-top: 10%;
+    margin: 10% 1% 5% 1%;
     display: flex;
     flex-direction: row;
     justify-content:space-between;
+    gap: 2%;
 }
 
 .box{
@@ -415,33 +422,53 @@ fieldset{
     margin-bottom: -2%;
     color:black;
     border-radius: 12px;
-    padding:2%;    
+    padding:2%;   
+    box-shadow: 0px 0px 5px 2px #284347; 
 }
 
 #vegano , #vegetariano{
     background-color: #b5dada;
     padding: 2%;
+    box-shadow: 0px 0px 5px 2px #386166; 
+}
+
+#alergias{
+    background-color:#88d7f2;
+}
+
+#titulo_alergias{
+    align-self: center;
+    justify-self: center;
+    color:#e2f4fc;
 }
 
 
 select {
-    background: transparent;
+    background-color: #e2f4fc;
     border: none;
     font-size: 14px;
     height: 30px;
-    padding: 5px;
-    width: 250px;
+    padding: 1%;
+    width: 350px;
+    border-radius: 12px;
+ }
+
+ .caja:hover{
+    border: solid gray 2px
  }
 
  select:focus{ outline: none;}
 
  .caja {
+    border-radius: 12px;
     margin:20px auto;        
     border:1px solid #d9d9d9;
-    height:30px;
-    width: 230px;
+    height:50px;
+    width: 300px;
     overflow: hidden;
     position:relative;
+    background-color: #e2f4fc;
+    box-shadow: 0px 0px 5px 2px #128ab7;
  }
 
  .caja::after{
@@ -449,8 +476,8 @@ select {
     display:table-cell;
     text-align:center;
     padding-top:7px;
-    width:30px;
-    height:30px;
+    width:50px;
+    height:50px;
     background-color:#d9d9d9;
     position:absolute;
     top:0;
@@ -458,6 +485,7 @@ select {
     pointer-events: none;
  }
 
+ 
 /*Aqui comienza la parte de contacto*/
 
 body.contacto{
