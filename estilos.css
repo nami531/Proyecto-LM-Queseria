@@ -457,3 +457,18 @@ select {
     right:0px;
     pointer-events: none;
  }
+
+/*Aqui comienza la parte de contacto*/
+
+body.contacto{
+    background-color: /*color que quede bien */;
+    display:grid;
+    grid-row-template: repeat(2,auto)
+    grid-column-template: repeat(2, 2fr)
+    column-gap:2%;
+    row-gap:2%;
+}
+
+h1.contacto{
+   font-weidht:bold;
+}
