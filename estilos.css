@@ -489,15 +489,26 @@ select {
  
 /*Aqui comienza la parte de contacto*/
 
-body.contacto{
-    background-color: /*color que quede bien */;
-    display:grid;
-    grid-row-template: repeat(2,auto)
-    grid-column-template: repeat(2, 2fr)
-    column-gap:2%;
-    row-gap:2%;
+.contacto{
+    display: flex;
+    flex-direction: column;
+    gap:2%;
 }
 
-h1.contacto{
-   font-weidht:bold;
+.primerbloque, .segundobloque{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color:#88d7f2;
+    flex-wrap: wrap;
 }
+
+.segundobloque{
+    margin-top: 1%;
+}
+.item{
+    background-color: #128ab7;
+}
+
+
+
