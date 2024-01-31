@@ -354,7 +354,7 @@ fieldset{
     width: 150%;
 }
 #apellidos{
-    width: 250%;
+    width: 200%;
 }
 
 #correo{
@@ -410,10 +410,6 @@ fieldset{
     align-items: center;
 }
 
-#alergias{
-    background-color:white;
-}
-
 .textbox{
     background-color: #d1d9e6;
     margin-bottom: -2%;
@@ -427,9 +423,37 @@ fieldset{
     padding: 2%;
 }
 
-select, option{
-	appearance: none;
-	-webkit-appearance: none;
-	-moz-appearance: none;
 
-}
+select {
+    background: transparent;
+    border: none;
+    font-size: 14px;
+    height: 30px;
+    padding: 5px;
+    width: 250px;
+ }
+
+ select:focus{ outline: none;}
+
+ .caja {
+    margin:20px auto;        
+    border:1px solid #d9d9d9;
+    height:30px;
+    width: 230px;
+    overflow: hidden;
+    position:relative;
+ }
+
+ .caja::after{
+    content:"\025be";
+    display:table-cell;
+    text-align:center;
+    padding-top:7px;
+    width:30px;
+    height:30px;
+    background-color:#d9d9d9;
+    position:absolute;
+    top:0;
+    right:0px;
+    pointer-events: none;
+ }
