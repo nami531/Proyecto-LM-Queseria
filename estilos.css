@@ -273,16 +273,35 @@ button:hover{
 }
 /* Hasta aquí la galería */
 
-input[type=text], textarea, label.test{
-    border-radius: 0px;
-    color:white;
-    background-color: black;
-}
-
 #formulario_coment{
     background-color: black;
-    box-shadow: 3px 3px 3px 3px blue ;
     padding: 2%;
+    background-color: #dfeafb;
+    border-radius: 12px;
+    width:50%;
+}
+div.testimonios{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+#formulario_coment:hover{
+    border: #9cc3f4 2px solid;
+    
+}
+
+input#nom{
+    width: fit-content;
+    border: none;
+}
+#comentario{
+    background-color: white ;
+    border: none;
+    border-bottom:solid 1px black;
+}
+.comentario{
+    background-color: #128ab7;
+    border-radius: 12px;
 }
 
 /* Empiezo con el formulario de reservas */
@@ -377,14 +396,21 @@ fieldset{
     font-family: 'Marhey', sans-serif;
 }
 
-#enviar{
-    background-color: black;
-    color:white;
+#enviar , #Agregar{
     padding: 0.75% 2%;
     height:auto ;
     border-radius: 100px;
-    font-size: 15px;
     margin-right: 20%;
+}
+#enviar{
+    background-color: black;
+    color:white;
+    font-size: 15px;
+}
+
+#Agregar{
+    background-color: #6ea2ec;
+    border: solid 1px #4c81e5;
 }
 
 
@@ -606,7 +632,4 @@ h4#como{
     width: 1200px;
 }
 
-.correoemp{
-
-}
 
