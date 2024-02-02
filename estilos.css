@@ -700,3 +700,103 @@ h4#como{
 }
 
 
+/* Hasta aqui el contacto */
+section.platosolicitados{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2vh;
+}
+
+.contenedormenu{
+    display: flex;
+    flex-direction: column;
+}
+.hulk, .mcheese, .jamon{
+    display: grid;
+    grid-template-columns: 75% 25%;
+    grid-template-rows: 25px 1fr;
+    row-gap:2vh ;
+    column-gap: 4vh;
+    padding: 4vh;
+    border-bottom: solid 2px #917f6e;
+}
+.mcheese{
+    grid-template-columns: 25% 75% ;
+}
+#textohulk, #textojamon, #textomc{
+    grid-row: 2;
+}
+
+#textohulk, #textojamon{
+    grid-column: 1;
+}
+
+#textomc{
+    grid-column: 2;
+}
+
+#imghulk, #imgjamon, #imgmc{
+    grid-row: 2;
+}
+
+#imghulk, #imgjamon{
+    grid-column: 2;
+}
+
+#imgmc{
+    grid-column: 1;
+}
+
+.ps{
+    height: 25vh;
+    width: auto;
+}
+
+.hulk{
+    background-color: #efe1d1;
+}
+.mcheese{
+    background-color: #efd2be;
+}
+.jamon{
+    background-color: #efbc98;
+}
+/* Hasta aquí la primera parte del menu */
+
+.segundomenu{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    column-gap: 2vh;
+    row-gap: 2vh;
+    justify-content: center;
+    margin-bottom: 2vh;
+}
+
+.itemmenu{
+    background-color: #d9ddcd;
+    border-radius: 12px;
+}
+
+#arzua{
+    grid-column:2;
+}
+
+#quesos, #comb, #ad{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+article#qu, #quesos, #comb, #ad{
+    height:  80vh;
+}
+
+.tabs{
+    padding: 0px 1vh;
+    background-color: whitesmoke;
+    width: 70vh;    
+    margin-bottom: 2vh;
+    border-radius: 12px;
+}
