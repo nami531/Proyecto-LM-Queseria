@@ -238,14 +238,15 @@ li{
 
 /* Hasta aquí el quienes somos */
 
+/* aquí empiezo la galeria */
 
-/* .galeria{
-    display: flex;
-    align-items: stretch;
-    padding: 0.5%;
-    background-color: black;
+.galeria{
+    display: grid;
+    gap:0;
     justify-items: center;
-} */
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,1fr);
+}
 
 
 button.galeria{
@@ -256,15 +257,16 @@ button.galeria{
 }
 
 #siguiente{
-    position:absolute;
-    right: 15%;
-    top:37%;
+    grid-row:1;
+    grid-column:3;
 }
 
-#anterior{
-    position:absolute;
-    left: 15%;
-    top:37%;
+div.anterior{
+    display: flex;
+    align-items: center;
+    align-content: right;
+    justify-content: center;
+    padding-left:5vh ;
 }
 
 button:hover{
@@ -284,7 +286,7 @@ section#contenedor{
     padding: 2%;
     background-color: #dfeafb;
     border-radius: 12px;
-    width:50%;
+    width:50vh;
 }
 div.testimonios{
    display: flex;
@@ -325,6 +327,12 @@ input#nom{
 }
 .texto_respuesta{
     margin-left: 1vh;
+}
+
+textarea#comentario{
+    width: 28vh;
+    height: 10vh;
+    margin-top: 1vh;
 }
 
 /* Empiezo con el formulario de reservas */
