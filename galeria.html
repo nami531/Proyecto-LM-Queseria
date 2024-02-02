@@ -9,9 +9,15 @@
         <meta name="keywords" content="quesos, fotos de quesos, jamón, jamon, quesería yo sin ti">
         <link rel = "icon" href="Multimedia/bolas-de-queso.png">
         <link rel="stylesheet" href="./estilos.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Diphylleia&family=Marhey:wght@300&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Diphylleia&family=Marhey:wght@300&family=Poor+Story&display=swap" rel="stylesheet">
         <script> 
             let currentIndex = 0; 
-            const totalImages = 9;
+            const totalImages = 6;
 
             function showImage(index) {
                 const images=document.querySelectorAll("#carousel img");
@@ -37,7 +43,7 @@
             }
         </script>
         <script>
-            var listaPlatos = ["Tabla Hulk", "Queso Provolone", "Nuestro jamón de bellota", "Mac'n Cheese", "Queso Himmerlands", "Queso Manchego", "Carré D'aurillac","Queso Munster","Tabla de 8 quesos variados" ];
+            var listaPlatos = ["Tabla Hulk",  "Queso Himmerlands", "Queso Manchego", "Carré D'aurillac","Queso Munster","Tabla de 8 quesos variados" ];
             var indiceActual = 0;
 
             function anteriorTexto() {
@@ -60,7 +66,7 @@
     
     <body>
         <header>
-            <nav class="menu"> 
+            <nav id="navgaleria" class="menu"> 
                 <a href="index.html" target = "_blank">Inicio</a> 
                 &nbsp;                
                 <a href="quienes_somos.html" target = "_blank">Quiénes somos</a> 
@@ -77,54 +83,64 @@
         <br>
 
         <main>
-            <section class="galeria">
-                <div class="anterior">
-                    <button class="galeria" onclick="AnteriorImg(); anteriorTexto()" id="anterior">Anterior</button>
-                </div>
-                
-                <article id="carousel" align="center" >
-                    <a href="Multimedia/cocinas 2.jpg" target="_self">
-                        <img src="Multimedia/cocinas 2.jpg"  height="500" width="750"/>
-                    </a>
+            <section id="contenedor_galeria">
+                <div class="galeria">
+                    <div class="anterior">
+                        <button class="botongaleria" onclick="AnteriorImg(); anteriorTexto()" id="anterior">&lt;</button>
+                    </div>
                     
-                    <a href="Multimedia/cocinas.jpg" target="_self">
-                        <img src="Multimedia/cocinas.jpg" hidden height="600" width="500"/>
-                    </a>
-                    
-                    <a href="Multimedia/jamon.jpg" target="_self">
-                        <img src="Multimedia/jamon.jpg" hidden height="500" width="500"/>
-                    </a>
-                    
-                    <a href="Multimedia/maccheese.jpeg" target="_self">
-                        <img src="Multimedia/maccheese.jpeg" hidden height="500" width="500"/>
-                    </a>
-                    
-                    <a href="Multimedia/queso1.jpg" target="_self">
-                        <img src="Multimedia/queso1.jpg" hidden height="500" width="750"/>
-                    </a>
-                    
-                    <a href="Multimedia/queso2.jpg" target="_self">
-                        <img src="Multimedia/queso2.jpg" hidden height="500" width="750"/>
-                    </a>
-                    
-                    <a href="Multimedia/queso3.jpg" target="_self">
-                        <img src="Multimedia/queso3.jpg" hidden height="500" width="750"/>
-                    </a>
-                    
-                    <a href="Multimedia/queso4.png" target="_self">
-                        <img src="Multimedia/queso4.png" hidden height="500" width="750"/>
-                    </a>
+                    <div class="carousel">
+                        <article id="carousel" align="center" >
+                            <a href="Multimedia/cocinas 2.jpg" target="_self">
+                                <img class="imggal" src="Multimedia/cocinas 2.jpg"  height="500" width="750"/>
+                            </a>
+                            
+                            <!-- <a href="Multimedia/cocinas.jpg" target="_self">
+                                <img class="imggal" src="Multimedia/cocinas.jpg" hidden height="600" width="500"/>
+                            </a>
+                            
+                            <a href="Multimedia/jamon.jpg" target="_self">
+                                <img class="imggal" src="Multimedia/jamon.jpg" hidden height="500" width="500"/>
+                            </a>
+                            
+                            <a href="Multimedia/maccheese.jpeg" target="_self">
+                                <img class="imggal" src="Multimedia/maccheese.jpeg" hidden height="500" width="500"/>
+                            </a> -->
+                            
+                            <a href="Multimedia/queso1.jpg" target="_self">
+                                <img class="imggal" src="Multimedia/queso1.jpg" hidden height="500" width="750"/>
+                            </a>
+                            
+                            <a href="Multimedia/queso2.jpg" target="_self">
+                                <img class="imggal" src="Multimedia/queso2.jpg" hidden height="500" width="750"/>
+                            </a>
+                            
+                            <a href="Multimedia/queso3.jpg" target="_self">
+                                <img class="imggal" src="Multimedia/queso3.jpg" hidden height="500" width="750"/>
+                            </a>
+                            
+                            <a href="Multimedia/queso4.png" target="_self">
+                                <img class="imggal" src="Multimedia/queso4.png" hidden height="500" width="750"/>
+                            </a>
 
-                    <a href="Multimedia/vino3.jpeg" target="_self">
-                        <img src="Multimedia/vino3.jpeg" hidden height="500" width="750"/>                
-                    </a>
-                    <br>           
-                </article>
-                <article id="platos" >
-                    <h1 id="TextoPlato">Tabla Hulk</h1>
-                </article>
-                <button class="galeria" onclick="SiguienteImg(); siguienteTexto()" id="siguiente">Siguiente</button>
+                            <a href="Multimedia/vino3.jpeg" target="_self">
+                                <img class="imggal" src="Multimedia/vino3.jpeg" hidden height="500" width="750"/>                
+                            </a>         
+                        </article>
+                    </div>
+                    <div class="siguiente">
+                        <button class="botongaleria" onclick="SiguienteImg(); siguienteTexto()" id="siguiente">&gt;</button>
+                    </div>
+                </div>
+                    <article id="platos" >
+                        <h1 align="center" id="TextoPlato">Tabla Hulk</h1>
+                    </article>
+                
+                
+                
+            </div>
             </section>
+            
             <br>
         </main> 
         <footer >

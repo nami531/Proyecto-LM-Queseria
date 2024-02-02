@@ -238,41 +238,77 @@ li{
 
 /* Hasta aquí el quienes somos */
 
-/* aquí empiezo la galeria */
 
-.galeria{
+
+
+
+/* Aquí empiezo la galeria */
+
+section#contenedor_galeria{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(./Multimedia/fondo_galeria.jpg);
+    background-repeat:no-repeat;
+    background-size: 280vh;
+    background-position: -750px;
+    margin:-2.3vh 0 ;
+}
+div.galeria{
+    padding-top: 3vh;
     display: grid;
-    gap:0;
+    column-gap:-20px;
     justify-items: center;
     grid-template-columns: repeat(3,1fr);
-    grid-template-rows: repeat(2,1fr);
+    grid-template-rows: 1fr auto;
 }
 
 
-button.galeria{
+
+.botongaleria{
     border: none;
     height: auto;
     background-color: transparent;
-    color: black;
+    color: white;
+    font-size: 3vh;
+    font-family: 'Poor Story', system-ui;
+    border-radius: 5px;
+
 }
 
-#siguiente{
+div.siguiente{
+    display: flex;
+    align-content: left;
+    padding-right: 23em;
     grid-row:1;
     grid-column:3;
 }
 
 div.anterior{
     display: flex;
-    
     align-content: right;
-   
-    padding-left:5vh ;
+    padding-left:23em;
+}
+
+#platos{
+    font-family: 'Diphylleia', serif;
+    padding: 1vh;
+    font-size: 2.5vh;
+    background-color: rgba(85, 60, 6, 0.6);
+    margin-bottom: 1vh;
+    box-shadow: 0 3px 5px 2px black;
+    width: 725px;
+    
+}
+#TextoPlato{
+    align-items: center;
 }
 
 button:hover{
     background-color: rgba(0, 0, 0, 0.5);
-    box-shadow: 0 3px 5px 2px;
+    box-shadow: 0 3px 5px 2px black;
 }
+
 /* Hasta aquí la galería */
 section#contenedor{
     display: grid;
