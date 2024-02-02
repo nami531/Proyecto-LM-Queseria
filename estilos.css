@@ -263,9 +263,9 @@ button.galeria{
 
 div.anterior{
     display: flex;
-    align-items: center;
+    
     align-content: right;
-    justify-content: center;
+   
     padding-left:5vh ;
 }
 
