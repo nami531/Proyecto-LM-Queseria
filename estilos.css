@@ -272,8 +272,14 @@ button:hover{
     box-shadow: 0 3px 5px 2px;
 }
 /* Hasta aquí la galería */
-
+section#contenedor{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap:2vh;
+    margin-top: 1vh;
+}
 #formulario_coment{
+    
     background-color: black;
     padding: 2%;
     background-color: #dfeafb;
@@ -285,6 +291,7 @@ div.testimonios{
    align-items: center;
    justify-content: center;
 }
+
 #formulario_coment:hover{
     border: #9cc3f4 2px solid;
     
@@ -300,8 +307,24 @@ input#nom{
     border-bottom:solid 1px black;
 }
 .comentario{
-    background-color: #128ab7;
+    background-color: whitesmoke;
     border-radius: 12px;
+}
+.texto_del_comentario{
+    padding: 1vh;
+}
+.respuesta{
+    margin-left: 5vh;
+    border-radius: 12px;
+    border: dashed;
+    background-color: white;
+    
+}
+.respuesta:hover{
+    box-shadow: -2px -1px 2vh 1px black;
+}
+.texto_respuesta{
+    margin-left: 1vh;
 }
 
 /* Empiezo con el formulario de reservas */

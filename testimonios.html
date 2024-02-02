@@ -22,7 +22,7 @@
             
                 var comment = document.createElement("article");
                 comment.className = "comentario";
-                comment.innerHTML = "<strong>@" + nombre + ":</strong> " + texto_del_comentario + "<br> <br>";
+                comment.innerHTML = "<br><strong>&nbsp;&nbsp;&nbsp;@" + nombre + ":</strong> " + texto_del_comentario + "<br> <br>";
     
                 
                 document.getElementById("contenedor").appendChild(comment);       
@@ -46,20 +46,21 @@
         </header>
         <main>
             <section id="contenedor">
-                <article name="Juan"><p><strong>@Juan: </strong>Templo para los amantes del queso, es una delicia entrar en esta tienda. Además de unos estupendos quesos, colocados divinamente, disponen de buen vino y algún que otro producto gourmet. Os aconsejaran según vuestros gustos, y es que el personal es muy amable. Me encanta coger una caja y rellenarla de porciones variadas. Además se organizan catas y eventos en su salón trasero. Un paraíso!!</p></article>
+                <article class="comentario" name="Juan"><p class="texto_del_comentario"><strong>@Juan: </strong>Templo para los amantes del queso, es una delicia entrar en esta tienda. Además de unos estupendos quesos, colocados divinamente, disponen de buen vino y algún que otro producto gourmet. Os aconsejaran según vuestros gustos, y es que el personal es muy amable. Me encanta coger una caja y rellenarla de porciones variadas. Además se organizan catas y eventos en su salón trasero. Un paraíso!!</p></article>
                 
-                <article name="Maria"></p><strong>@María: </strong>Amplia selección de quesos con una gran calidad y una excelente RCP.  Gran profesionalidad y un trato muy amable. Catas muy interesantes. Totalmente recomendable</p></article>
+                <article class="comentario" name="Maria"><p class="texto_del_comentario"><strong>@María: </strong>Amplia selección de quesos con una gran calidad y una excelente RCP.  Gran profesionalidad y un trato muy amable. Catas muy interesantes. Totalmente recomendable</p></article>
 
-                <article name="Manolo"><p><strong>@Manolo: </strong>Todo tipo de quesos artesanos y una atención especializada, explicándote los orígenes de cada uno y asesorándote con paciencia infinita.las cajas para regalar son un éxito garantizado.</p></article>
-
-                <article name="respuestaManolo"><p><em>En respuesta a <strong>@Manolo</strong>:</em> Muchas gracias Manolo por apreciar nuestro esfuerzo, esperamos volver a verte</p></article>
-
-                <article name="Marisol"><p><strong>@Marisol: </strong>Amabilidad-profesionalidad-calidad eso es lo que te vas a encontrar, si eres un amante de los quesos este es tu sitio.</p></article>
-
-                <article name="Diana"><p><strong>@Diana: </strong>La reseña correspondiente a la quesería sería de 5 estrellas, tienen unos productos espectaculares y siempre incorporan novedades. Un auténtico lujo para los que somos amantes del queso. Sin embargo, la atención que hemos recibido las dos últimas veces ha sido pésima. Nos atendió una chica joven, con un trato desagradable y maleducado. Una pena.</p></article>
-
-                <article name="respuestaDiana"><p><em>En respuesta a <strong>@Diana: </strong></em>Lo sentimos mucho Diana, te esperamos con los brazos abiertos para la próxima vez.</p></article>
+                <div>
+                    <article class="comentario" name="Manolo"><p class="texto_del_comentario"><strong>@Manolo: </strong>Todo tipo de quesos artesanos y una atención especializada, explicándote los orígenes de cada uno y asesorándote con paciencia infinita.las cajas para regalar son un éxito garantizado.</p></article>
+                    <article class="respuesta" name="respuestaManolo"><p class="texto_respuesta"><em>En respuesta a <strong>@Manolo</strong>:</em> Muchas gracias Manolo por apreciar nuestro esfuerzo, esperamos volver a verte</p></article>
+                </div>
                 
+                <article class="comentario" name="Marisol"><p class="texto_del_comentario"><strong>@Marisol: </strong>Amabilidad-profesionalidad-calidad eso es lo que te vas a encontrar, si eres un amante de los quesos este es tu sitio.</p></article>
+                
+                <div>
+                    <article class="comentario" name="Diana"><p class="texto_del_comentario"><strong>@Diana: </strong>La reseña correspondiente a la quesería sería de 5 estrellas, tienen unos productos espectaculares y siempre incorporan novedades. Un auténtico lujo para los que somos amantes del queso. Sin embargo, la atención que hemos recibido las dos últimas veces ha sido pésima. Nos atendió una chica joven, con un trato desagradable y maleducado. Una pena.</p></article>
+                    <article class="respuesta" name="respuestaDiana"><p class="texto_respuesta"><em>En respuesta a <strong>@Diana: </strong></em>Lo sentimos mucho Diana, te esperamos con los brazos abiertos para la próxima vez.</p></article>
+                </div>
             </section><br><br>
 
             <section class="testimonios" id="form">
