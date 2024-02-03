@@ -403,8 +403,8 @@ fieldset{
 .nom_ap{
     display: flex;
     flex-direction: row;
-    gap:22vh;
-    margin-bottom: 3vh;   
+    gap:3vh;
+    margin-bottom: 0vh;   
     align-content:center ;
     align-items: center;
     justify-content: center;
@@ -414,10 +414,10 @@ fieldset{
 .sep_column{
     flex-wrap: wrap;
     display: grid;
-    grid-template-rows: 50vh 50vh;
-    gap: 50vh;
+    grid-template-rows: 50% 50%;
+    gap: 2vh;
     margin: 2vh;
-    position:relative;
+    /* position:relative; */
 }
 
 .reserv, #nombre, #apellidos{
@@ -437,16 +437,16 @@ fieldset{
 }
 
 #tel{
-    width: 10vh;
+    width: 12vh;
     justify-content:center;
 
 }
 
 #nombre{
-    width: 150vh;
+    width: 15vh;
 }
 #apellidos{
-    width: 200vh;
+    width: 25vh;
 }
 
 #correo{
@@ -487,11 +487,11 @@ fieldset{
 
 
 .cajas_pref{
-    margin: 10vh 1vh 5vh 1vh;
+    margin: 10% 1% 5% 1%;
     display: flex;
     flex-direction: row;
     justify-content:space-between;
-    gap: 2vh;
+    gap: 2%;
 }
 
 .box{
