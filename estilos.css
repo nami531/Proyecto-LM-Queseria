@@ -5,7 +5,7 @@ body{
 }
 
 footer{
-    padding: 2%;
+    padding: 2VH;
     background-color: gray;
     color :white;
     /* margin-top:10% ; */
@@ -55,26 +55,27 @@ nav{
     flex-direction: row;  
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 a.menu{
     flex:space-between;
-    padding: 1.5% ;
+    padding: 1.5vh ;
     color: white;
     text-decoration: none;   
 }
 
 a:hover.menu{
     /* flex:auto; */
-    padding: 1.5% ;
+    padding: 1.5vh ;
     background-color: white;
     text-decoration: none;
     color: black;      
 }
 
 .titulo{
-    bottom:27% ;
-    left: 40%;
+    bottom:27VH ;
+    left: 90vh;
     position:fixed;
     text-shadow: 2px 2px 5px black;
     font-family: 'DM Serif Display', serif;
@@ -82,9 +83,9 @@ a:hover.menu{
 
 #logo{
     position: absolute;
-    right:30%;
-    bottom:-40%;
-    width: 40%;
+    right:9vh;
+    bottom:-3vh;
+    width: 15vh;
     height: auto;
     z-index: -1;
     opacity: 0.75;
@@ -92,18 +93,18 @@ a:hover.menu{
 
 #eslogan{
     position: absolute;
-    left:10%;
-    bottom:-20%;
+    left: 5vh;
+    bottom:-2vh;
     color:rgb(255, 205, 176);
 }
 /* hay que hacer el bienvenido a nuestra página web responsive */
 #bienvenido{
-    position: absolute;
+    position: fixed;
     background-color:rgba(0, 0, 0, 0.5) ;
-    padding:0.7%;
-    font-weight: 100;
-    top: 4.4%;      
-    left:10%;
+    padding:0.7vh;
+    font-weight: 100vh;
+    top: 3.4vh;      
+    left:20.9vh;
     font-size: larger;
 }
 
@@ -119,10 +120,10 @@ a:hover.menu{
 
 footer.index{
     position:absolute;
-    bottom: 0%; 
+    bottom: 0vh; 
     background-color:rgba(0, 0, 0, 0.5) ;
-    padding: 1%;
-    width:78%;
+    padding: 1vh;
+    width:165.1vh;
 }
 
 /* Hasta aquí el css de la página de index */
@@ -134,7 +135,7 @@ a.restantes{
     background-color: gray;
     color: white;
     flex:space-between;
-    padding: 1% 5%;
+    padding: 1vh 5vh;
     font-weight: bold;
 }
 
@@ -144,13 +145,13 @@ nav.menu{
     flex-direction: row;  
     align-items: center;
     justify-content: center;
-    padding-bottom: 1%;
+    padding-bottom: 1vh;
     border-bottom: 1px solid;
     flex-wrap: wrap;
 }
 
 .nuestra_historia{
-    margin-top: -1.5%;
+    margin-top: -1.5vh;
     background-color: black;
 }
 
@@ -158,40 +159,40 @@ h1.qs, #reservar{
     font-family: 'Bebas Neue', sans-serif;
     font-size: 190%;
     letter-spacing:0.1rem;
-    width: 5%;
-    padding: 3% 3% 0 3%;
+    width: 5vh;
+    padding: 3vh 3vh 0 3vh;
     color:white;
 }
 
 .nh{
     display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: minmax(100%, 250%);
+    grid-template-columns: 50vh 50vh;
+    grid-template-rows: minmax(100vh, 250vh);
     justify-items: center;
     align-items: center;
-    margin-top: minmax(-1.5%,2%);
-    margin-bottom: -1.8%;
+    margin-top: minmax(-1.5vh,2vh);
+    margin-bottom: -1.8vh;
 }
 
 #superqueso{
-    width: 70%;
+    width: 70vh;
     
 }
 .texto, dd, dt{
-    padding-left: 3%;
+    padding-left: 3vh;
     color: white
 }
 
 .ne{
     background-image: url(./Multimedia/gente.jpg);
     background-repeat: no-repeat;
-    margin-top: 0%;
+    margin-top: 0vh;
     background-size: 120% auto;
     background-position: center;
 }
 
 .lista{
-    padding-bottom:1%;
+    padding-bottom:1vh;
 }
 
 dt{
@@ -207,7 +208,7 @@ dt::before{
 .nm{
     background-color: black;
     color:white;
-    padding: 1%;
+    padding: 1vh;
 }
 
 .ns{
@@ -221,18 +222,18 @@ dt::before{
 ul{
     display:grid;
     grid-template-columns:repeat(3, 3fr);
-    column-gap: 3%;
+    column-gap: 3vh;
     grid-template-rows: repeat(2,auto);
-    row-gap: 3%;
+    row-gap: 3vh;
     list-style-type: none;
-    padding: 3%;
+    padding: 3vh;
 }
 
 li{
     border:dashed;
     display: flex;
     flex-direction: column;
-    padding: 2%;
+    padding: 2vh;
     background-color: white;
 }
 
@@ -319,7 +320,7 @@ section#contenedor{
 #formulario_coment{
     
     background-color: black;
-    padding: 2%;
+    padding: 2vh;
     background-color: #dfeafb;
     border-radius: 12px;
     width:50vh;
@@ -383,23 +384,23 @@ textarea#comentario{
 }
 
 fieldset{
-    margin: 1%;
+    margin: 1vh;
     border:none;
 }
 
 #form{
     background-color:white;
     color:black;
-    padding:1%;
+    padding:1vh;
     box-shadow: 0px 0px 8px 2px rgba(0, 0, 0, 0.75);
-    margin: 3% 0;
+    margin: 3vh 0;
 }
 
 .nom_ap{
     display: flex;
     flex-direction: row;
-    gap:22%;
-    margin-bottom: 3%;   
+    gap:22vh;
+    margin-bottom: 3vh;   
     align-content:center ;
     align-items: center;
     justify-content: center;
@@ -409,9 +410,9 @@ fieldset{
 .sep_column{
     flex-wrap: wrap;
     display: grid;
-    grid-template-rows: 50% 50%;
-    gap: 50%;
-    margin: 2%;
+    grid-template-rows: 50vh 50vh;
+    gap: 50vh;
+    margin: 2vh;
     position:relative;
 }
 
@@ -424,34 +425,34 @@ fieldset{
 
 .email-tlf{
     display: grid;
-    grid-template-rows: 50%;
-    gap:3%;
-    margin-bottom: 3%;
+    grid-template-rows: 50vh;
+    gap:3vh;
+    margin-bottom: 3vh;
     position:relative;
-    left:25%;
+    left:25vh;
 }
 
 #tel{
-    width: 10%;
+    width: 10vh;
     justify-content:center;
 
 }
 
 #nombre{
-    width: 150%;
+    width: 150vh;
 }
 #apellidos{
-    width: 200%;
+    width: 200vh;
 }
 
 #correo{
-    width: 50%;
+    width: 50vh;
 }
 
 
 #butt{
-    margin-left: -10%;
-    gap:10%;    
+    margin-left: -10vh;
+    gap:10vh;    
     /* justify-content: left;
     justify-items: center;
     align-items: center;
@@ -464,10 +465,10 @@ fieldset{
 }
 
 #enviar , #Agregar{
-    padding: 0.75% 2%;
+    padding: 0.75vh 2vh;
     height:auto ;
     border-radius: 100px;
-    margin-right: 20%;
+    margin-right: 20vh;
 }
 #enviar{
     background-color: black;
@@ -482,20 +483,20 @@ fieldset{
 
 
 .cajas_pref{
-    margin: 10% 1% 5% 1%;
+    margin: 10vh 1vh 5vh 1vh;
     display: flex;
     flex-direction: row;
     justify-content:space-between;
-    gap: 2%;
+    gap: 2vh;
 }
 
 .box{
     display: grid;
     grid-template-rows: repeat(3, 3fr);
-    row-gap: 20%;
-    width:100%;
-    margin-bottom: 2%;
-    padding: 2% 2% 4%;
+    row-gap: 20vh;
+    width:100vh;
+    margin-bottom: 2vh;
+    padding: 2vh 2vh 4vh;
     border-radius: 12px;
 }
 
@@ -513,16 +514,16 @@ fieldset{
 
 .textbox{
     background-color: #d1d9e6;
-    margin-bottom: -2%;
+    margin-bottom: -2vh;
     color:black;
     border-radius: 12px;
-    padding:2%;   
+    padding:2vh;   
     box-shadow: 0px 0px 5px 2px #284347; 
 }
 
 #vegano , #vegetariano{
     background-color: #b5dada;
-    padding: 2%;
+    padding: 2vh;
     box-shadow: 0px 0px 5px 2px #386166; 
 }
 
@@ -542,7 +543,7 @@ select {
     border: none;
     font-size: 14px;
     height: 30px;
-    padding: 1%;
+    padding: 1vh;
     width: 350px;
     border-radius: 12px;
  }
@@ -585,7 +586,7 @@ select {
 .contacto{
     display: flex;
     flex-direction: column;
-    gap:2%;
+    gap:2vh;
 }
 
 .primerbloque{
@@ -593,8 +594,8 @@ select {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    gap:20%;
-    margin-bottom: 1%;
+    gap:20vh;
+    margin-bottom: 1vh;
 }
 
 .horario{
@@ -604,7 +605,7 @@ select {
 
 .item1{
     background-color: whitesmoke;
-    padding: 1%;
+    padding: 1vh;
     border-radius: 12px;
     justify-content: center;
 }
@@ -622,16 +623,16 @@ select {
     display: grid;
     grid-template-rows:200px 200px 200px;
     grid-template-columns: 200px 200px 300px;
-    margin-top: 1%;
-    /* gap:2%; */
-    column-gap: 2%;
-    row-gap: 6%;
+    margin-top: 1vh;
+    /* gap:2vh; */
+    column-gap: 2vh;
+    row-gap: 6vh;
 }
 
 .item{
     align-self: center;
     align-items: center;
-    min-height: 20%;
+    min-height: 20vh;
 }
 
 .redes{
@@ -649,7 +650,7 @@ select {
 
 .img_redes{
     max-width: 60px;
-    margin-bottom: 1%;
+    margin-bottom: 1vh;
     border-radius: 120px;
 }
 
@@ -682,15 +683,15 @@ select {
     bottom:650px;
     right: 200px;
     z-index: -1;
-    margin-right: 0%;
+    margin-right: 0vh;
     width: 600px;
     height: 400px;
     background-color: #bdbdbd;
 }
 
 #correo_tel{
-    padding: 3%;
-    margin-left: -25%;
+    padding: 3vh;
+    margin-left: -25vh;
     display: flex;
     flex-direction: column;
 }
@@ -713,7 +714,7 @@ section.platosolicitados{
 }
 .hulk, .mcheese, .jamon{
     display: grid;
-    grid-template-columns: 75% 25%;
+    grid-template-columns: 75vh 25vh;
     grid-template-rows: 25px 1fr;
     row-gap:2vh ;
     column-gap: 4vh;
@@ -721,7 +722,7 @@ section.platosolicitados{
     border-bottom: solid 2px #917f6e;
 }
 .mcheese{
-    grid-template-columns: 25% 75% ;
+    grid-template-columns: 25vh 75vh ;
 }
 #textohulk, #textojamon, #textomc{
     grid-row: 2;
