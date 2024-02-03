@@ -341,7 +341,7 @@ div.testimonios{
 }
 
 input#nom{
-    width: fit-content;
+    width: 20vh;
     border: none;
 }
 #comentario{
