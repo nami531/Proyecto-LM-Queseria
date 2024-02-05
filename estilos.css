@@ -27,7 +27,7 @@ a.footer{
 @media (max-width: 750px) {
     #background-video { display: none; }
     body {
-      background: url("Multimedia/videoindex.avi") no-repeat;
+      background: url("./Multimedia/videoindex.avi") no-repeat;
       background-size: cover;
     }
   }
