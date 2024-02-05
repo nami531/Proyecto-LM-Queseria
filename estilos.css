@@ -128,7 +128,7 @@ footer.index{
 
 /* Hasta aquí el css de la página de index */
 body.qs{
-    background-color: rgb(29, 29, 29);
+    background-color: white;
 }
 a.restantes{
     text-decoration: none;
@@ -156,7 +156,10 @@ nav.menu{
 
 .nuestra_historia{
     margin-top: -1.5vh;
-    background-color: black;
+    background-color: whitesmoke;
+}
+#textonh, #textoquienessomos{
+    color:black
 }
 
 h1.qs, #reservar{
@@ -165,7 +168,7 @@ h1.qs, #reservar{
     letter-spacing:0.1rem;
     width: 5vh;
     padding: 3vh 3vh 0 3vh;
-    color:white;
+    color:black;
 }
 
 .nh{
@@ -210,8 +213,8 @@ dt::before{
 }
 
 .nm{
-    background-color: black;
-    color:white;
+    background-color: whitesmoke;
+    color:black;
     padding: 1vh;
 }
 
@@ -240,6 +243,8 @@ li{
     padding: 2vh;
     background-color: white;
 }
+
+#nuestroequipo{color:white}
 
 /* Hasta aquí el quienes somos */
 
@@ -718,7 +723,7 @@ section.platosolicitados{
 }
 .hulk, .mcheese, .jamon{
     display: grid;
-    grid-template-columns: 75vh 25vh;
+    grid-template-columns: 75% 25%;
     grid-template-rows: 25px 1fr;
     row-gap:2vh ;
     column-gap: 4vh;
@@ -752,6 +757,9 @@ section.platosolicitados{
     grid-column: 1;
 }
 
+#imghulk{
+    width: 1vh;º
+}
 .ps{
     height: 25vh;
     width: auto;
